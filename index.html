@@ -20,7 +20,7 @@
         <img class="" src="./img/italo-treno-vector-logo.png" alt="italo">
         <div class="row p-3 ms_row m-auto rounded-4">
             <div class="col-lg-8 ">
-                <span class="fs-3"><i class="fa-solid fa-train px-3"></i>Buy ticket</span>
+                <span class="fs-2"><i class="fa-solid fa-train px-4"></i>Buy ticket</span>
 
                 <div class="d-flex">
                     <div class="form-group mb-2 mx-auto">
@@ -47,7 +47,7 @@
                 <option value="1"> < than 18 years old</option>
                 <option value="2">> Over 65</option>
               </select> -->
-                    
+
                 </div>
                 <button type="submit" class="btn btn-danger mt-3 mb-2 mx-4 fw-bold" id="generate-btn">Search</button>
 
@@ -56,18 +56,31 @@
         </div>
     </div>
 
-    <!-- Info and cosr recap  -->
+    <!-- Info and cost recap  -->
     <div class="container ms_container mt-5 rounded-3">
         <img class="" src="./img/italo-treno-vector-logo.png" alt="italo">
-        <div class="row p-3 ms_row m-auto rounded-4 text-center">
-            <div class="col-lg-12">
-                <span class="fs-3"><i class="fa-solid fa-ticket px-3"></i></span><h4>Ticket Cost</h4>
-                <p id="ticketCost">Placeholder</p>
-               
-               
+        <div class="row ms_row m-auto rounded-4 text-center">
+            <div class="col-lg-4 offset-lg-2 p-3">
+                <span class="fs-3"><i class="fa-solid fa-user"></i></span>
+                <h4>Passenger</h4>
+                <p class="fs-6 mb-5" id="ticketCot"></p>
+
+                <span class="fs-3"><i class="fa-solid fa-ruler-horizontal"></i></span>
+                <h4>Trip Distance</h4>
+                <p class="fs-6" id="ticketCst"></p>
+            </div>
+
+                <div class="col-lg-4 p-3">
+                <span class="fs-3"><i class="fa-solid fa-train-subway"></i></span>
+                <h4>Carriage</h4>
+                <p class="fs-6 mb-5" id="ticketost"></p>
 
 
+                <span class="fs-3"><i class="fa-solid fa-ticket"></i></span>
+                <h4>Ticket Cost</h4>
+                <p class="fs-6" id="ticketCost"></p>
 
+                
             </div>
         </div>
     </div>

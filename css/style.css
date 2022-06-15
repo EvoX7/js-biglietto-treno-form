@@ -7,11 +7,15 @@
 
 .ms_row {
     background-color: white;
-    height: 250px;
-    padding: 30px;
+    height: 270px;
+   
 }
 
 img {
     width: 200px;
     height: 120px;
+}
+
+.fa-ticket {
+    line-height:100px;
 }
