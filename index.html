@@ -2,90 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap 5.2  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Italo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5.2  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Italo</title>
 
 </head>
 
 <body>
-    <div class="container ms_container mt-5 rounded-3">
-        <img class="" src="./img/italo-treno-vector-logo.png" alt="italo">
-        <div class="row p-3 ms_row m-auto rounded-4">
-            <div class="col-lg-8 ">
-                <span class="fs-2"><i class="fa-solid fa-train px-4"></i>Buy ticket</span>
+  <div class="container ms_container mt-5 rounded-3">
+    <img class="" src="./img/italo-treno-vector-logo.png" alt="italo">
+    <div class="row p-3 ms_row m-auto rounded-4">
+      <div class="col-lg-8 ">
+        <span class="fs-2"><i class="fa-solid fa-train px-4"></i>Buy ticket</span>
 
-                <div class="d-flex">
-                    <div class="form-group mb-2 mx-auto">
-                        <p class="fs-4">Name and Lastname</p>
-                        <label for="inputName" class="sr-only">Name</label>
-                        <input type="text" class="form-control" id="inputName"
-                            placeholder="Enter your First and Last name">
-                    </div>
-                    <div class="form-group mb-2 mx-auto">
-                        <p class="fs-4">Trip Distance</p>
-                        <label for="inputDistance" class="sr-only">Distance</label>
-                        <input type="text" class="form-control" id="inputDistance" placeholder="Enter distance (in Km)">
-                    </div>
+        <div class="d-flex">
+          <div class="form-group mb-2 mx-auto">
+            <p class="fs-4">Name and Lastname</p>
+            <label for="inputName" class="sr-only">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Enter your First and Last name">
+          </div>
+          <div class="form-group mb-2 mx-auto">
+            <p class="fs-4">Trip Distance</p>
+            <label for="inputDistance" class="sr-only">Distance</label>
+            <input type="text" class="form-control" id="inputDistance" placeholder="Enter distance (in Km)">
+          </div>
 
-                    <div class="form-group mb-2 mx-auto">
-                        <p class="fs-4">Age group</p>
-                        <label for="inputAge" class="sr-only">Age</label>
-                        <input type="text" class="form-control" id="inputAge" placeholder="Write down your age">
-                    </div>
+          <div class="form-group mb-2 mx-auto">
+            <p class="fs-4">Age group</p>
+            <label for="inputAge" class="sr-only">Age</label>
+            <input type="text" class="form-control" id="inputAge" placeholder="Write down your age">
+          </div>
 
-
-                    <!-- <select class="form-select" aria-label="Default select example">
+          <!-- <select class="form-select" aria-label="Default select example">
                 <option selected>Select your age group</option>
                 <option value="1"> < than 18 years old</option>
                 <option value="2">> Over 65</option>
               </select> -->
 
-                </div>
-                <button type="submit" class="btn btn-danger mt-3 mb-2 mx-4 fw-bold" id="generate-btn">Search</button>
-
-
-            </div>
         </div>
+        <button type="submit" class="btn btn-danger mt-3 mb-2 mx-4 fw-bold" id="generate-btn">Search</button>
+
+      </div>
     </div>
+  </div>
 
-    <!-- Info and cost recap  -->
-    <div class="container ms_container mt-5 rounded-3">
-        <img class="" src="./img/italo-treno-vector-logo.png" alt="italo">
-        <div class="row ms_row m-auto rounded-4 text-center">
-            <div class="col-lg-4 offset-lg-2 p-3">
-                <span class="fs-3"><i class="fa-solid fa-user"></i></span>
-                <h4>Passenger</h4>
-                <p class="fs-6 mb-5" id="ticketCot"></p>
+  <!-- Info and cost recap  -->
+  <div class="container ms_container mt-5 rounded-3">
+    <img class="" src="./img/italo-treno-vector-logo.png" alt="italo">
+    <div class="row ms_row m-auto rounded-4 text-center">
+      <div class="col-lg-4 offset-lg-2 p-3">
+        <span class="fs-3"><i class="fa-solid fa-user"></i></span>
+        <h4>Passenger</h4>
+        <p class="fs-6 mb-3" id="userName"></p>
 
-                <span class="fs-3"><i class="fa-solid fa-ruler-horizontal"></i></span>
-                <h4>Trip Distance</h4>
-                <p class="fs-6" id="ticketCst"></p>
-            </div>
+        <span class="fs-3"><i class="fa-solid fa-ruler-horizontal"></i></span>
+        <h4>Trip Distance</h4>
+        <p class="fs-6" id="userDistance"></p>
+      </div>
 
-                <div class="col-lg-4 p-3">
-                <span class="fs-3"><i class="fa-solid fa-train-subway"></i></span>
-                <h4>Carriage</h4>
-                <p class="fs-6 mb-5" id="ticketost"></p>
+      <div class="col-lg-4 p-3">
+        <span class="fs-3"><i class="fa-solid fa-train-subway"></i></span>
+        <h4>Carriage</h4>
+        <p class="fs-6 mb-3" id="carriageNumber"></p>
 
+        <span class="fs-3"><i class="fa-solid fa-ticket"></i></span>
+        <h4>Ticket Cost</h4>
+        <p class="fs-6" id="ticketCost"></p>
 
-                <span class="fs-3"><i class="fa-solid fa-ticket"></i></span>
-                <h4>Ticket Cost</h4>
-                <p class="fs-6" id="ticketCost"></p>
-
-                
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 
-    <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>

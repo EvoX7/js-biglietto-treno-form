@@ -1,8 +1,6 @@
 const submitButton = document.querySelector("#generate-btn");
 
-
 submitButton.addEventListener("click", function () {
-
   // User input
   const userName = document.getElementById("inputName").value;
   const distanceKm = document.getElementById("inputDistance").value;
@@ -31,9 +29,12 @@ submitButton.addEventListener("click", function () {
     message = "Ticket cost is: " + cost.toFixed(2) + "€";
   }
 
-
   console.log(document.getElementById("inputName").value);
   console.log(document.getElementById("inputDistance").value);
   console.log(document.getElementById("inputAge").value);
+
+  document.getElementById("userName").innerHTML = `${userName}`;
+  document.getElementById("userDistance").innerHTML = `${distanceKm}` + " km";
   document.getElementById("ticketCost").innerHTML = `${message}`;
+  document.getElementById("carriageNumber").innerHTML = "7";
 });
