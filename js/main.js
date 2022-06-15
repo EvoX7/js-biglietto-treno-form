@@ -36,5 +36,5 @@ submitButton.addEventListener("click", function () {
   document.getElementById("userName").innerHTML = `${userName}`;
   document.getElementById("userDistance").innerHTML = `${distanceKm}` + " km";
   document.getElementById("ticketCost").innerHTML = `${message}`;
-  document.getElementById("carriageNumber").innerHTML = "coach 7 - seat 34";
+  document.getElementById("coachNumber").innerHTML = "coach 7 - seat 34";
 });
