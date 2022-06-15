@@ -1,0 +1,12 @@
+.ms_container {
+    background-color: brown;
+    height: 400px;
+    padding: 50px;
+}
+
+
+.ms_row {
+    background-color: white;
+    height: 250px;
+    padding: 30px;
+}
