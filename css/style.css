@@ -1,7 +1,7 @@
 .ms_container {
     background-color: brown;
     height: 400px;
-    padding: 50px;
+    
 }
 
 
@@ -9,4 +9,9 @@
     background-color: white;
     height: 250px;
     padding: 30px;
+}
+
+img {
+    width: 200px;
+    height: 120px;
 }
