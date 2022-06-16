@@ -1,5 +1,7 @@
 const submitButton = document.querySelector("#generate-btn");
 
+
+  // Event listner 
 submitButton.addEventListener("click", function () {
   // User input
   const userName = document.getElementById("inputName").value;
@@ -10,17 +12,17 @@ submitButton.addEventListener("click", function () {
   let message;
 
   // Defined initial ticket cost
-  let cost = distanceKm * 0.21;
+  let cost = distanceKm * 0.26;
 
   // Discount conditions
   if (userAge <= 17) {
-    cost = cost - (cost * 20) / 100;
+    cost = cost - (cost * 15) / 100;
     message =
       "You are entitled to a 20% discount! Ticket cost is: " +
       cost.toFixed(2) +
       "€";
   } else if (userAge >= 65) {
-    cost = cost - (cost * 40) / 100;
+    cost = cost - (cost * 35) / 100;
     message =
       "You are entitled to a 40% discount! Ticket cost is: " +
       cost.toFixed(2) +
